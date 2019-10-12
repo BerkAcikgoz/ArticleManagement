@@ -1,0 +1,10 @@
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Data\bin\Debug\netcoreapp2.2\ArticleManagement.DataLib.deps.json
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Data\bin\Debug\netcoreapp2.2\ArticleManagement.DataLib.runtimeconfig.json
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Data\bin\Debug\netcoreapp2.2\ArticleManagement.DataLib.runtimeconfig.dev.json
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Data\bin\Debug\netcoreapp2.2\ArticleManagement.DataLib.dll
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Data\bin\Debug\netcoreapp2.2\ArticleManagement.DataLib.pdb
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Data\obj\Debug\netcoreapp2.2\ArticleManagement.DataLib.csproj.CoreCompileInputs.cache
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Data\obj\Debug\netcoreapp2.2\ArticleManagement.DataLib.AssemblyInfoInputs.cache
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Data\obj\Debug\netcoreapp2.2\ArticleManagement.DataLib.AssemblyInfo.cs
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Data\obj\Debug\netcoreapp2.2\ArticleManagement.DataLib.dll
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Data\obj\Debug\netcoreapp2.2\ArticleManagement.DataLib.pdb

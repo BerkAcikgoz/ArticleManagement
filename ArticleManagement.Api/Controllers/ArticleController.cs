@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ArticleManagement.DataLibrary.Entity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArticleManagement.Api.Controllers
@@ -12,22 +13,11 @@ namespace ArticleManagement.Api.Controllers
   {
 
     [HttpGet]
-    public ActionResult<IEnumerable<string>> Get()
+    public string Get()
     {
-      return new string[] { "value1", "Berkk" };
-    }
-
-   
-    [HttpGet("{id}")]
-    public ActionResult<string> Get(int id)
-    {
-      return "value";
-    }
-
- 
-    [HttpPost]
-    public void Post([FromBody] string value)
-    {
+      ArticleDbContext context = new ArticleDbContext();
+      var a = context.Article.FirstOrDefault();
+      return a.Content;
     }
 
 
