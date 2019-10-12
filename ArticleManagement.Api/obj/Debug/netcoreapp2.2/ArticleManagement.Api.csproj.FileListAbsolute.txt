@@ -1,0 +1,14 @@
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\bin\Debug\netcoreapp2.2\ArticleManagement.Api.deps.json
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\bin\Debug\netcoreapp2.2\ArticleManagement.Api.runtimeconfig.json
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\bin\Debug\netcoreapp2.2\ArticleManagement.Api.runtimeconfig.dev.json
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\bin\Debug\netcoreapp2.2\ArticleManagement.Api.dll
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\bin\Debug\netcoreapp2.2\ArticleManagement.Api.pdb
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\obj\Debug\netcoreapp2.2\ArticleManagement.Api.csprojAssemblyReference.cache
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\obj\Debug\netcoreapp2.2\ArticleManagement.Api.csproj.CoreCompileInputs.cache
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\obj\Debug\netcoreapp2.2\ArticleManagement.Api.RazorAssemblyInfo.cache
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\obj\Debug\netcoreapp2.2\ArticleManagement.Api.RazorAssemblyInfo.cs
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\obj\Debug\netcoreapp2.2\ArticleManagement.Api.AssemblyInfoInputs.cache
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\obj\Debug\netcoreapp2.2\ArticleManagement.Api.AssemblyInfo.cs
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\obj\Debug\netcoreapp2.2\ArticleManagement.Api.RazorTargetAssemblyInfo.cache
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\obj\Debug\netcoreapp2.2\ArticleManagement.Api.dll
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Api\obj\Debug\netcoreapp2.2\ArticleManagement.Api.pdb
