@@ -12,11 +12,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ArticleManagement.Api.Controllers
 {
-  [Route("api/[controller]")]
+  [Route("[controller]")]
   [ApiController]
   public class ArticleController : ControllerBase
   {
-    [HttpPost]
+    [HttpPost("Add")]
     public ResultModel Add([FromBody] Article request)
     {
       if (request != null)
@@ -34,7 +34,7 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-    [HttpPost]
+    [HttpPost("Delete")]
     public ResultModel Delete([FromBody] BaseRequest request)
     {
       if (request.Id > 0)
@@ -52,7 +52,7 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-    [HttpPost]
+    [HttpPost("Update")]
     public ResultModel Update([FromBody] Article request)
     {
       if (request != null)
@@ -70,7 +70,7 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-    [HttpPost]
+    [HttpPost("GetListOfCategory")]
     public ResultModel GetListOfCategory([FromBody] BaseRequest request)
     {
       if (request.Id > 0)
@@ -88,8 +88,8 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-    [HttpPost]
-    public ResultModel FindArticle([FromBody] BaseRequest request)
+    [HttpPost("FindArticle")]
+    public ResultModel FindArticle(BaseRequest request)
     {
       if (string.IsNullOrEmpty(request.Value))
       {

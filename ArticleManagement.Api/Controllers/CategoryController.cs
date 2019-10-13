@@ -12,11 +12,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ArticleManagement.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class CategoryController : ControllerBase
     {
-    [HttpPost]
+    [HttpPost("Add")]
     public ResultModel Add([FromBody] Category request)
     {
       if (request != null)
@@ -34,7 +34,7 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-    [HttpPost]
+    [HttpPost("Delete")]
     public ResultModel Delete([FromBody] BaseRequest request)
     {
       if (request != null)
@@ -52,7 +52,7 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-    [HttpPost]
+    [HttpPost("Update")]
     public ResultModel Update([FromBody] Category request)
     {
       if (request != null)
@@ -70,7 +70,7 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-    [HttpPost]
+    [HttpPost("GetList")]
     public ResultModel GetList()
     {
       try
@@ -83,7 +83,7 @@ namespace ArticleManagement.Api.Controllers
         return new ResultModel { Data = null, Status = ResultStatus.ServerInternalError, Message = "Hata oluştu" };
       }
     }
-    [HttpPost]
+    [HttpPost("GetCategoryOfArticles")]
     public ResultModel GetCategoryOfArticles([FromBody] BaseRequest request)
     {
       if (request != null)
@@ -101,5 +101,6 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
+   
   }
 }

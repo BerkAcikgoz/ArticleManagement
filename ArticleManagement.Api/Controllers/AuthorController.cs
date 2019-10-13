@@ -12,11 +12,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ArticleManagement.Api.Controllers
 {
-  [Route("api/[controller]")]
+  [Route("[controller]")]
   [ApiController]
   public class AuthorController : ControllerBase
   {
-    [HttpPost]
+    [HttpPost("Add")]
     public ResultModel Add([FromBody] Author request)
     {
       if (request != null)
@@ -34,7 +34,7 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-    [HttpPost]
+    [HttpPost("Delete")]
     public ResultModel Delete([FromBody] BaseRequest request)
     {
       if (request.Id > 0)
@@ -52,7 +52,7 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-    [HttpPost]
+    [HttpPost("Update")]
     public ResultModel Update([FromBody] Author request)
     {
       if (request != null)
@@ -70,7 +70,7 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-    [HttpPost]
+    [HttpPost("GetAuthor")]
     public ResultModel GetAuthor([FromBody] BaseRequest request)
     {
       if (request.Id > 0)
@@ -89,7 +89,7 @@ namespace ArticleManagement.Api.Controllers
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
 
     }
-    [HttpPost]
+    [HttpPost("GetListArticleOfAuthor")]
     public ResultModel GetListArticleOfAuthor([FromBody] BaseRequest request)
     {
       if (request.Id > 0)
