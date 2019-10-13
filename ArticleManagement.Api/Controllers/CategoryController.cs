@@ -7,23 +7,23 @@ using ArticleManagement.BusinessLogic.Message.Request;
 using ArticleManagement.BusinessLogic.Model;
 using ArticleManagement.BusinessLogic.Services;
 using ArticleManagement.DataLibrary.Entity;
-using ArticleManagement.DataLibrary.Repository;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArticleManagement.Api.Controllers
 {
-  [Route("api/[controller]")]
-  [ApiController]
-  public class ArticleController : ControllerBase
-  {
+    [Route("api/[controller]")]
+    [ApiController]
+    public class CategoryController : ControllerBase
+    {
     [HttpPost]
-    public ResultModel Add([FromBody] Article request)
+    public ResultModel Add([FromBody] Category request)
     {
       if (request != null)
       {
         try
         {
-          ResultModel result = ArticleService.AddArticle(request);
+          ResultModel result = CategoryService.AddCategory(request);
           return result;
         }
         catch (Exception ex)
@@ -37,11 +37,11 @@ namespace ArticleManagement.Api.Controllers
     [HttpPost]
     public ResultModel Delete([FromBody] BaseRequest request)
     {
-      if (request.Id > 0)
+      if (request != null)
       {
         try
         {
-          ResultModel result = ArticleService.DeleteArticle(request);
+          ResultModel result = CategoryService.DeleteCategory(request);
           return result;
         }
         catch (Exception ex)
@@ -53,13 +53,13 @@ namespace ArticleManagement.Api.Controllers
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
     [HttpPost]
-    public ResultModel Update([FromBody] Article request)
+    public ResultModel Update([FromBody] Category request)
     {
       if (request != null)
       {
         try
         {
-          ResultModel result = ArticleService.UpdateArticle(request);
+          ResultModel result = CategoryService.UpdateCategory(request);
           return result;
         }
         catch (Exception ex)
@@ -71,31 +71,26 @@ namespace ArticleManagement.Api.Controllers
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
     [HttpPost]
-    public ResultModel GetListOfCategory([FromBody] BaseRequest request)
+    public ResultModel GetList()
     {
-      if (request.Id > 0)
+      try
       {
-        try
-        {
-          ResultModel result = ArticleService.GetListOfCategory(request);
-          return result;
-        }
-        catch (Exception ex)
-        {
-          return new ResultModel { Data = null, Status = ResultStatus.ServerInternalError, Message = "Hata oluştu" };
-        }
+        ResultModel result = CategoryService.GetList();
+        return result;
       }
-      else
-        return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
+      catch (Exception ex)
+      {
+        return new ResultModel { Data = null, Status = ResultStatus.ServerInternalError, Message = "Hata oluştu" };
+      }
     }
     [HttpPost]
-    public ResultModel FindArticle([FromBody] BaseRequest request)
+    public ResultModel GetCategoryOfArticles([FromBody] BaseRequest request)
     {
-      if (string.IsNullOrEmpty(request.Value))
+      if (request != null)
       {
         try
         {
-          ResultModel result = ArticleService.FindArticle(request);
+          ResultModel result = CategoryService.GetCategoryOfArticles(request);
           return result;
         }
         catch (Exception ex)
@@ -106,6 +101,5 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-
   }
 }

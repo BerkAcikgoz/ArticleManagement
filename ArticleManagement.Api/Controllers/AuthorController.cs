@@ -7,23 +7,23 @@ using ArticleManagement.BusinessLogic.Message.Request;
 using ArticleManagement.BusinessLogic.Model;
 using ArticleManagement.BusinessLogic.Services;
 using ArticleManagement.DataLibrary.Entity;
-using ArticleManagement.DataLibrary.Repository;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ArticleManagement.Api.Controllers
 {
   [Route("api/[controller]")]
   [ApiController]
-  public class ArticleController : ControllerBase
+  public class AuthorController : ControllerBase
   {
     [HttpPost]
-    public ResultModel Add([FromBody] Article request)
+    public ResultModel Add([FromBody] Author request)
     {
       if (request != null)
       {
         try
         {
-          ResultModel result = ArticleService.AddArticle(request);
+          ResultModel result = AuthorService.AddAuthor(request);
           return result;
         }
         catch (Exception ex)
@@ -41,7 +41,7 @@ namespace ArticleManagement.Api.Controllers
       {
         try
         {
-          ResultModel result = ArticleService.DeleteArticle(request);
+          ResultModel result = AuthorService.DeleteAuthor(request);
           return result;
         }
         catch (Exception ex)
@@ -53,13 +53,13 @@ namespace ArticleManagement.Api.Controllers
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
     [HttpPost]
-    public ResultModel Update([FromBody] Article request)
+    public ResultModel Update([FromBody] Author request)
     {
       if (request != null)
       {
         try
         {
-          ResultModel result = ArticleService.UpdateArticle(request);
+          ResultModel result = AuthorService.UpdateAuthor(request);
           return result;
         }
         catch (Exception ex)
@@ -71,13 +71,13 @@ namespace ArticleManagement.Api.Controllers
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
     [HttpPost]
-    public ResultModel GetListOfCategory([FromBody] BaseRequest request)
+    public ResultModel GetAuthor([FromBody] BaseRequest request)
     {
       if (request.Id > 0)
       {
         try
         {
-          ResultModel result = ArticleService.GetListOfCategory(request);
+          ResultModel result = AuthorService.GetAuthor(request);
           return result;
         }
         catch (Exception ex)
@@ -87,15 +87,16 @@ namespace ArticleManagement.Api.Controllers
       }
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
+
     }
     [HttpPost]
-    public ResultModel FindArticle([FromBody] BaseRequest request)
+    public ResultModel GetListArticleOfAuthor([FromBody] BaseRequest request)
     {
-      if (string.IsNullOrEmpty(request.Value))
+      if (request.Id > 0)
       {
         try
         {
-          ResultModel result = ArticleService.FindArticle(request);
+          ResultModel result = AuthorService.GetListArticleOfAuthor(request);
           return result;
         }
         catch (Exception ex)

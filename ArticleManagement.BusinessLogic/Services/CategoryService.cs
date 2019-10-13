@@ -47,22 +47,17 @@ namespace ArticleManagement.BusinessLogic.Services
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
 
     }
-    public static ResultModel GetList(BaseRequest request)
+    public static ResultModel GetList()
     {
-      if (request.Id > 0)
+      try
       {
-        try
-        {
-          List<Category> response = GenericRepository.GetList<Category>(x => x.IsActive == true);
-          return new ResultModel { Data = response, Status = ResultStatus.Success, Message = "Başarılı bir şekilde listelendi" };
-        }
-        catch (Exception ex)
-        {
-          return new ResultModel { Data = null, Status = ResultStatus.ServerInternalError, Message = "Hata oluştu" };
-        }
+        List<Category> response = GenericRepository.GetList<Category>(x => x.IsActive == true);
+        return new ResultModel { Data = response, Status = ResultStatus.Success, Message = "Başarılı bir şekilde listelendi" };
       }
-      else
-        return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
+      catch (Exception ex)
+      {
+        return new ResultModel { Data = null, Status = ResultStatus.ServerInternalError, Message = "Hata oluştu" };
+      }
     }
     public static ResultModel GetCategoryOfArticles(BaseRequest request)
     {
@@ -72,28 +67,6 @@ namespace ArticleManagement.BusinessLogic.Services
         {
           List<Article> response = GenericRepository.GetList<Article>(x => x.CategoryId == request.Id && x.IsActive == true);
           return new ResultModel { Data = response, Status = ResultStatus.Success, Message = "Başarılı bir şekilde listelendi" };
-        }
-        catch (Exception ex)
-        {
-          return new ResultModel { Data = null, Status = ResultStatus.ServerInternalError, Message = "Hata oluştu" };
-        }
-      }
-      else
-        return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
-    }
-    public static ResultModel FindCategory(BaseRequest request)
-    {
-
-      if (string.IsNullOrEmpty(request.Value))
-      {
-        try
-        {
-          List<Category> response = GenericRepository.GetList<Category>(x => request.Value.Contains(x.Name));
-          if (response.Count == 0)
-            return new ResultModel { Data = null, Status = ResultStatus.Success, Message = "Sonuç bulunamadı" };
-          else
-            return new ResultModel { Data = response, Status = ResultStatus.Success, Message = "Başarılı bir şekilde listelendi" };
-
         }
         catch (Exception ex)
         {

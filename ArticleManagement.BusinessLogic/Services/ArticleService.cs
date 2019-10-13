@@ -66,7 +66,6 @@ namespace ArticleManagement.BusinessLogic.Services
     }
     public static ResultModel FindArticle(BaseRequest request)
     {
-
       if (string.IsNullOrEmpty(request.Value))
       {
         try
