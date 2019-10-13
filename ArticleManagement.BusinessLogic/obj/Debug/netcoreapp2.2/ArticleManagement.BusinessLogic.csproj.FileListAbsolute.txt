@@ -7,3 +7,6 @@ C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagemen
 C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.BusinessLogic\obj\Debug\netcoreapp2.2\ArticleManagement.BusinessLogic.AssemblyInfo.cs
 C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.BusinessLogic\obj\Debug\netcoreapp2.2\ArticleManagement.BusinessLogic.dll
 C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.BusinessLogic\obj\Debug\netcoreapp2.2\ArticleManagement.BusinessLogic.pdb
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.BusinessLogic\bin\Debug\netcoreapp2.2\ArticleManagement.DataLibrary.dll
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.BusinessLogic\bin\Debug\netcoreapp2.2\ArticleManagement.DataLibrary.pdb
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.BusinessLogic\obj\Debug\netcoreapp2.2\ArticleManagement.BusinessLogic.csproj.CopyComplete

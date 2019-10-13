@@ -8,3 +8,4 @@ C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagemen
 C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.DataLibrary\obj\Debug\netcoreapp2.2\ArticleManagement.DataLibrary.pdb
 C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.DataLibrary\bin\Debug\netcoreapp2.2\ArticleManagement.DataLibrary.runtimeconfig.json
 C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.DataLibrary\bin\Debug\netcoreapp2.2\ArticleManagement.DataLibrary.runtimeconfig.dev.json
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.DataLibrary\obj\Debug\netcoreapp2.2\ArticleManagement.DataLibrary.csprojAssemblyReference.cache

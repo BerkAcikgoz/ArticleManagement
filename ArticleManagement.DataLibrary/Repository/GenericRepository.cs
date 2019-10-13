@@ -51,15 +51,17 @@ namespace ArticleManagement.DataLibrary.Repository
         return entity;
       }
     }
+
+
     public static void Delete<T>(int id) where T : BaseEntity
     {
       DataAccess.Context.Set<T>().Remove(Get<T>(id));
       DataAccess.Context.SaveChanges();
     }
-    public static void Delete<T>(T entity) where T : BaseEntity
-    {
-      DataAccess.Context.Set<T>().Remove((T)entity);
-      DataAccess.Context.SaveChanges();
-    }
+    //public static void Delete<T>(T entity) where T : BaseEntity
+    //{
+    //  DataAccess.Context.Set<T>().Remove((T)entity);
+    //  DataAccess.Context.SaveChanges();
+    //}
   }
 }
