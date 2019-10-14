@@ -88,6 +88,5 @@ namespace ArticleManagement.Api.Controllers
       else
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
-   
   }
 }

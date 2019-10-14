@@ -6,6 +6,6 @@ namespace ArticleManagement.BusinessLogic.Model
 {
   public class TestModel
   {
-    public string value { get; set; }
+    public string Value { get; set; }
   }
 }

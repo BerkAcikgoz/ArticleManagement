@@ -66,11 +66,12 @@ namespace ArticleManagement.BusinessLogic.Services
     }
     public static ResultModel FindArticle(BaseRequest request)
     {
-      if (string.IsNullOrEmpty(request.Value))
+      if (!string.IsNullOrEmpty(request.Value))
       {
         try
         {
-          List<Article> response = GenericRepository.GetList<Article>(x => request.Value.Contains(x.Title));
+          List<Article> response = GenericRepository.GetList<Article>(x =>x.Title.Contains("Test"));
+          //List<Article> response = GenericRepository.GetList<Article>(x=>x.Id==1);
           if (response.Count == 0)
             return new ResultModel { Data = null, Status = ResultStatus.Success, Message = "Sonuç bulunamadı" };
           else

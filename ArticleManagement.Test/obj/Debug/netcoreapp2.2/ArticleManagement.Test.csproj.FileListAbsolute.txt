@@ -1,0 +1,16 @@
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\obj\Debug\netcoreapp2.2\ArticleManagement.Test.csprojAssemblyReference.cache
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\obj\Debug\netcoreapp2.2\ArticleManagement.Test.csproj.CoreCompileInputs.cache
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\obj\Debug\netcoreapp2.2\ArticleManagement.Test.AssemblyInfoInputs.cache
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\obj\Debug\netcoreapp2.2\ArticleManagement.Test.AssemblyInfo.cs
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\bin\Debug\netcoreapp2.2\ArticleManagement.Test.deps.json
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\bin\Debug\netcoreapp2.2\ArticleManagement.Test.runtimeconfig.json
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\bin\Debug\netcoreapp2.2\ArticleManagement.Test.runtimeconfig.dev.json
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\bin\Debug\netcoreapp2.2\ArticleManagement.Test.dll
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\bin\Debug\netcoreapp2.2\ArticleManagement.Test.pdb
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\bin\Debug\netcoreapp2.2\ArticleManagement.BusinessLogic.dll
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\bin\Debug\netcoreapp2.2\ArticleManagement.DataLibrary.dll
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\bin\Debug\netcoreapp2.2\ArticleManagement.BusinessLogic.pdb
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\bin\Debug\netcoreapp2.2\ArticleManagement.DataLibrary.pdb
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\obj\Debug\netcoreapp2.2\ArticleManagement.Test.csproj.CopyComplete
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\obj\Debug\netcoreapp2.2\ArticleManagement.Test.dll
+C:\Users\berka\OneDrive\Belgeler\D\Job\ArticleManagementProject\ArticleManagement.Test\obj\Debug\netcoreapp2.2\ArticleManagement.Test.pdb

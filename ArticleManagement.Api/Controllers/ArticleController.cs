@@ -89,7 +89,7 @@ namespace ArticleManagement.Api.Controllers
         return new ResultModel { Data = null, Status = ResultStatus.BadRequest, Message = "Geçersiz değer" };
     }
     [HttpPost("FindArticle")]
-    public ResultModel FindArticle(BaseRequest request)
+    public ResultModel FindArticle([FromBody]BaseRequest request)
     {
       if (string.IsNullOrEmpty(request.Value))
       {
